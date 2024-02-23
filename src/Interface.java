@@ -1,4 +1,4 @@
-package pong;
+package src;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -103,14 +103,14 @@ public class Interface {
 
         else{
         	win.setFont(kufi);
-            drawCenteredString("" +  numberFormat.format(scoreL), GDV5.getMaxWindowX()/4, 200, win);
-            drawCenteredString("" + numberFormat.format(scoreR), GDV5.getMaxWindowX()*3/4, 200, win);
+            drawCenteredString("" +  scoreL, GDV5.getMaxWindowX()/4, 200, win);
+            drawCenteredString("" + scoreR, GDV5.getMaxWindowX()*3/4, 200, win);
             win.setFont(fgtS);
 
             if(countDown >= 60){        	
             	win.setFont(kufi);
 
-                win.drawString("" + (numberFormat.format(countDown/60)), GDV5.getMaxWindowX() / 2, 200);
+                win.drawString("" + countDown/60, GDV5.getMaxWindowX() / 2, 200);
                 win.setFont(fgtS);
                 drawCenteredString("SCORE " + (runGame.maxScore) , GDV5.getMaxWindowX()/2, GDV5.getMaxWindowY()*7/8, win);
 

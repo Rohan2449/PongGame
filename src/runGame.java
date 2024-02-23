@@ -1,10 +1,9 @@
-package pong;
+package src;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import utilities.GDV5;
 
-import static pong.Interface.*;
 
 public class runGame {
     static int gameStatus = 0;
@@ -36,7 +35,7 @@ public class runGame {
 
         if (gameStatus == 1) {
             if (Interface.countDown > 0){
-                countDown--;
+                Interface.countDown--;
             }
             if(Interface.countDown < 60) {
                 //sets ball in motion
